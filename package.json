@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@mui/material": "^5.12.3",
     "graphql": "^16.6.0",
     "graphql-request": "^5.2.0",
     "html-react-parser": "^3.0.12",
