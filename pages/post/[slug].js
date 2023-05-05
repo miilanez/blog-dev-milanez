@@ -27,7 +27,6 @@ const PostDetails = ({ post }) => {
             <Categories />
           </div>
         </div>
-        Paramos em 1:43:00
       </div>
     </div>
   );
