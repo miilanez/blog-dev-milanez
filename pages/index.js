@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-key */
 import Head from "next/head";
-import { PostWidget, Categories, BlogPost } from "../components";
+import { About, PostWidget, Categories, BlogPost } from "../components";
 import { getPosts } from "../services";
-import About from "../components/About";
 
 export default function Home({ posts }) {
   return (
