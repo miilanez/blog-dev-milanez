@@ -2,12 +2,11 @@ import { request, gql } from "graphql-request";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT;
 
-export const getPosts = async () => {
+export const getPosts = async (createdAt) => {
   const query = gql`
-    query MyQuery {
-      postsConnection {
+    query GetPosts {
+      postsConnection(orderBy: publishedAt_DESC) {
         edges {
-          cursor
           node {
             author {
               bio
@@ -241,7 +240,7 @@ export const getRecentPosts = async () => {
   const query = gql`
     query GetPostDetails() {
       posts(
-        orderBy: createdAt_ASC
+        orderBy: publishedAt_DESC
         last: 3
       ) {
         title
