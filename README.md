@@ -13,3 +13,14 @@ Este projeto é um aplicação Web no formato de blog, construído por mim para 
 ## Live Demo
 ### [Clique Aqui](https://blog-dev-milanez.vercel.app) para visualizar a demo em tempo real!
 
+### Getting Started
+
+Após fazer o clone do repositório, basta iniciar o servidor seguindo os comandos:
+
+```bash
+npm install
+npm run dev
+
+```
+
+Abra [http://localhost:3000](http://localhost:3000) em seu browser para ver os resultados.
