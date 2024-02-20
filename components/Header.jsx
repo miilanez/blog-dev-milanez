@@ -11,12 +11,14 @@ const Header = () => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <div className="border-b w-full inline-block border-green-300 py-8">
-        <div className="w-full md:flex md:flex-row md:justify-between md:float-left">
-          <Link href="/">
-            <span className="cursor-pointer font-bold text-3xl md:text-4xl text-white">
-              Blog dev Milanez
-            </span>
-          </Link>
+        <div className="flex flex-col md:flex-row md:justify-between items-center">
+          <div className="flex justify-center lg:justify-start">
+            <Link href="/">
+              <h1 className="text-principal text-3xl font-semibold text-white">
+                Blog Dev Milanez
+              </h1>
+            </Link>
+          </div>
           <Link
             href="https://gabrielmilanez.vercel.app/"
             target="_blank"
